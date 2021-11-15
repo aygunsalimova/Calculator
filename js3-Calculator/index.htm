@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex justify-content-center ">
+        <div class="calculator p-3 border border-1 m-5">
+            <input type="text" class=" border border-0 mb-2" readonly="readonly" id="textarea"><br/>
+            <div class="first d-flex justify-content-between">
+                <button class="mt-1 me-2  border border-0" id="btn-1" value="1" onclick="Cal(1)">1</button>
+                <button class="mt-1 me-2  border border-0" id="btn-2" value="2" onclick="Cal(2)">2</button>
+                <button class="mt-1 me-2  border border-0" id="btn-3" value="3" onclick="Cal(3)">3</button>
+                <button class="mt-1  border border-0" id="plus" value="+" onclick="Cal('+')">+</button>
+            </div>
+            <div class="two d-flex justify-content-between">
+                <button class="mt-1 me-2  border border-0" id="btn-4" value="4" onclick="Cal(4)">4</button>
+                <button class="mt-1 me-2  border border-0" id="btn-5" value="5" onclick="Cal(5)">5</button>
+                <button class="mt-1 me-2  border border-0" id="btn-6" value="6" onclick="Cal(6)">6</button>
+                <button class="mt-1  border border-0" id="subtract" value="-" onclick="Cal('-')">-</button>
+            </div>
+            <div class="third d-flex justify-content-between">
+                <button class="mt-1 me-2  border border-0" id="btn-7" value="7" onclick="Cal(7)">7</button>
+                <button class="mt-1 me-2  border border-0" id="btn-8" value="8" onclick="Cal(8)">8</button>
+                <button class="mt-1 me-2  border border-0" id="btn-9" value="9" onclick="Cal(9)">9</button>
+                <button class="mt-1  border border-0" id="multiply" value="*" onclick="Cal('*')">*</button>
+            </div>
+            <div class="four d-flex justify-content-between">
+                <button class="mt-1 me-2  border border-0" id="c" value="" onclick="remove()">C</button>
+                <button class="mt-1 me-2  border border-0" id="btn-0" value="0" onclick="Cal(0)">0</button>
+                <button class="mt-1 me-2  border border-0" id="equal" value="=" onclick="Calculate()">=</button>
+                <button class="mt-1  border border-0" id="divide" value="/" onclick="Cal('/')">/</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
